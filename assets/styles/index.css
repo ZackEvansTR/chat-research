@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Clario;
+    font-weight: 400;
+    src:
+        url('../fonts/Clario-Regular.woff') format('woff'),
+        url('../fonts/Clario-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Clario;
+    font-weight: 700;
+    src:
+        url('../fonts/Clario-Bold.woff') format('woff'),
+        url('../fonts/Clario-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Clario;
+    font-weight: 400;
+    font-style: italic;
+    src:
+        url('../fonts/Clario-RegularItalic.woff') format('woff'),
+        url('../fonts/Clario-RegularItalic.woff2') format('woff2');
+}
+
+:root {
+    --constant_ratio: 0.390625vw;
+    --constant_size: 16px;
+    --font: Clario, Arial;
+    --color_tr-orange: #d64000;
+    --color_tr-racing-green: #123021;
+    --color_tr-white: #ffffff;
+    --color_tr-black: #000000;
+    --color_tr-graphite: #212223;
+    --color_tr-gray-1: #e5e5e5;
+    --color_tr-gray-2: #9f9f9f;
+    --color_tr-gray-3: #7a7a7a;
+    --color_tr-light-teal: #e3f3ee;
+    --color_tr-alert-red: #dc0a0a;
+    --color_tr-alert-green: #387c2b;
+    --color_tr-dark-sky: #0874e3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    color: var(--color_tr-racing-green);
+    padding: 0;
+}
+
+.vh:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
